@@ -28,7 +28,7 @@ const Home: NextPage = ({ content }: any) => {
     <div>
       <Box
         backgroundImage={
-          'url(https://images.ctfassets.net/ftv5t2jre3bg/3bdByODlc3nJSdG0EDjiLb/2e51d223709f00b8e2a92de76b25a2dd/_SEA6581S.jpg)'
+          'url(https://images.ctfassets.net/ftv5t2jre3bg/5qAsFLlYfjnGtkLeDtpqST/d0e75876f0e02fadaf92f57165f4d34a/_SEA6581S__1_.jpg)'
         }
         backgroundSize={'cover'}
         backgroundPosition={'center bottom'}
