@@ -115,7 +115,7 @@ import {
             spacing={4}
             divider={
               <StackDivider
-                borderColor={useColorModeValue('gray.100', 'gray.700')}
+                borderColor='gray.100'
               />
             }>
             <Feature
