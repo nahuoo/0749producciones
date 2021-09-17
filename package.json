@@ -13,13 +13,20 @@
     "@chakra-ui/react": "^1.6.7",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@fontsource/alegreya-sans-sc": "^4.5.0",
     "@fontsource/arimo": "^4.5.0",
     "@fontsource/brawler": "^4.5.0",
+    "@fontsource/pattaya": "^4.5.0",
+    "@formspree/react": "^2.2.4",
     "contentful": "^8.5.7",
+    "formik": "^2.2.9",
     "framer-motion": "^4.1.17",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-scroll-parallax": "^2.4.0",
+    "react-wavify": "^1.5.4",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "@types/react": "17.0.20",

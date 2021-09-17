@@ -15,26 +15,37 @@ import {
   useDisclosure,
   Button,
 } from '@chakra-ui/react'
+import { Mumu } from './mumu'
 
-export const FilmCard = ({ film }: any) => {
-  console.log(film)
+export const FilmCardMumu = ({ film }: any) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+
   return (
     <Center py={14} onClick={onOpen}>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>{film.title}</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-           {film.description}
-          </ModalBody>
+          <Box
+            bgGradient={useColorModeValue(
+              'radial(gray.300 1px, transparent 1px)',
+              'radial(gray.300 1px, transparent 1px)'
+            )}
+            backgroundSize="20px 20px"
+            opacity="0.4"
+            height="100%"
+          >
+            <ModalHeader>{film.title}</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>
+            <Mumu />
+            </ModalBody>
 
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              Cerrar
-            </Button>
-          </ModalFooter>
+            <ModalFooter>
+              <Button colorScheme="blue" mr={3} onClick={onClose}>
+                Cerrar
+              </Button>
+            </ModalFooter>
+          </Box>
         </ModalContent>
       </Modal>
 

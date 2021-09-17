@@ -6,41 +6,30 @@ import {
   VStack,
   useBreakpointValue,
 } from '@chakra-ui/react'
+import Wave from 'react-wavify'
 
 export const Hero = () => {
   return (
     <>
-      <Box h={'100vh'} bg="transparent"></Box>
-      <Flex
-        w={'full'}
-        h={'150vh'}
-       
-      >
-        <VStack
-          w={'full'}
-          justify={'flex-start'}
-          px={useBreakpointValue({ base: 4, md: 8 })}
-          bgGradient={'linear(to-t, white, transparent)'}
+        <Box h={'100vh'} bg="transparent"></Box>
+        <Wave
+          fill="url(#gradient)"
+          paused={false}
+          options={{
+            height: 10,
+            amplitude: 15,
+            speed: 0.3,
+            points: 6,
+          }}
         >
-          <Stack
-            maxW={'full'}
-            align={'flex-start'}
-            bg={'grayOpacity.800'}
-            spacing={6}
-          >
-            <Text
-              color={'white'}
-              px={{base:'0',md:'80'}}
-              py={5}
-              fontWeight={{base:'100',md:'400'}}
-              lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: 'xl', md: 'xl' })}
-            >
-              Somos un equipo jóven, nacido y criado junto al mar.
-            </Text>
-          </Stack>
-        </VStack>
-      </Flex>
+          <defs>
+            <linearGradient id="gradient" gradientTransform="rotate(90)">
+              <stop offset="20%" stopColor="#16a0b2c5" />
+              <stop offset="80%" stopColor="#fff" />
+            </linearGradient>
+          </defs>
+        </Wave>
+        <Flex w={'full'} mt={-5} bg={'white'} h={'10vh'}></Flex>
     </>
   )
 }
