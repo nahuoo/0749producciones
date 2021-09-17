@@ -27,9 +27,10 @@ const Home: NextPage = ({ content }: any) => {
   return (
     <div>
       <Box
-        backgroundImage={
-          'url(https://images.ctfassets.net/ftv5t2jre3bg/5qAsFLlYfjnGtkLeDtpqST/d0e75876f0e02fadaf92f57165f4d34a/_SEA6581S__1_.jpg)'
-        }
+        backgroundImage={{
+          md:'url(https://images.ctfassets.net/ftv5t2jre3bg/5qAsFLlYfjnGtkLeDtpqST/d0e75876f0e02fadaf92f57165f4d34a/_SEA6581S__1_.jpg)',
+            base:'url(https://images.ctfassets.net/ftv5t2jre3bg/3QePy3bDMeW5mQDU5bmYMt/b287aa7bef866c529f0cc5a9fefa0a00/_SEA2587.jpg)'
+        }}
         backgroundSize={'cover'}
         backgroundPosition={'center bottom'}
         backgroundAttachment={'fixed'}
